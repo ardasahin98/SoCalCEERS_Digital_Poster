@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Poster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+  </head>
+
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Back to poster overview">
+        <img
+          class="brand-logo"
+          src="assets/ucla.png"
+          alt="UCLA logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        />
+        <span class="brand-fallback" aria-hidden="true">UCLA</span>
+        <span class="brand-text">University of California, Los Angeles</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="poster-intro" aria-labelledby="poster-title">
+        <p class="poster-kicker">Digital Research Poster</p>
+
+        <h1 id="poster-title">
+          Visualization and Interpretation of Cyclic Laboratory Test Results for Soil Behavior Assessment
+        </h1>
+
+        <p class="authors">
+          Arda Sahin, Ph.D. Candidate<sup>1</sup>, Varun N.S. Renugah, Ph.D.
+          Candidate<sup>1</sup>, Amalesh Jana, Ph.D.<sup>2</sup>, Kristin J.
+          Ulmer, Ph.D.<sup>3</sup>, Scott J. Brandenberg, Ph.D.<sup>1</sup>, T.
+          Matthew Evans, Ph.D.<sup>4</sup>, Armin W. Stuedlein, Ph.D.<sup>4</sup>,
+          Steven L. Kramer, Ph.D.<sup>5</sup>, and Jonathan P. Stewart,
+          Ph.D.<sup>1</sup>
+        </p>
+
+        <div class="affiliations" aria-label="Author affiliations">
+          <p><sup>1</sup>University of California, Los Angeles, Los Angeles, CA 90095, USA</p>
+          <p><sup>2</sup>Montana State University, Bozeman, MT 59717, USA</p>
+          <p><sup>3</sup>Southwest Research Institute, San Antonio, TX 78238, USA</p>
+          <p><sup>4</sup>Oregon State University, Corvallis, OR 97331, USA</p>
+          <p><sup>5</sup>University of Washington, Seattle, WA 98195, USA</p>
+        </div>
+
+        <p class="intro-copy">
+          Soil response under dynamic loading can include pore pressure generation that leads to strength loss.
+          The level of pore pressure generation and strength loss is complex and is analyzed in different ways for
+          different soil types. The determination of how the soil response should be evaluated is referred to as a
+          susceptibility analysis, with the end members of behavior being sand-like and clay-like. As part of the
+          Next Generation Liquefaction (NGL) project, new probabilistic liquefaction susceptibility models are being
+          developed using the cyclic responses of soils from laboratory tests. This project entails: i) populating
+          the NGL database with cyclic test results that include measured index properties and nearby cone penetration
+          test (CPT) results; ii) visualizing cyclic test results and interpreting them to quantitatively characterize
+          the soil response; iii) gathering expert analyst responses to evaluate soil behavior via a web form;
+          iv) developing an interim model between the quantitative metrics and analyst responses; and v) proposing
+          a probabilistic susceptibility model using easily accessible soil properties in the field, such as Atterberg
+          Limits and CPT results.
+        </p>
+      </section>
+
+      <section class="feature-grid" aria-label="Poster sections">
+        <a class="feature-card" href="#ngl-lab-viewer">
+          <img
+            class="feature-image"
+            src="assets/ngl-lab-viewer-preview.png"
+            alt="Preview of the NGL Lab Viewer section"
+          />
+          <span class="feature-content">
+            <span class="feature-title">NGL Lab Viewer</span>
+            <span class="feature-description">
+              Explore susceptibility lab test data, available summaries, and a short feature walkthrough.
+            </span>
+          </span>
+        </a>
+
+        <a class="feature-card" href="#python-workflow">
+          <img
+            class="feature-image"
+            src="assets/python-workflow-preview.png"
+            alt="Preview of the Example Python Workflow section"
+          />
+          <span class="feature-content">
+            <span class="feature-title">Example Python Workflow</span>
+            <span class="feature-description">
+              Review an example analysis workflow using the NGL database and a short video demonstration.
+            </span>
+          </span>
+        </a>
+      </section>
+
+      <section class="detail-section" id="ngl-lab-viewer" aria-labelledby="ngl-title">
+        <div class="section-heading">
+          <p class="section-kicker">Interactive Section</p>
+          <h2 id="ngl-title">NGL Lab Viewer</h2>
+        </div>
+
+        <p class="section-copy">
+          NGL Lab Viewer was developed to interact with laboratory test data in the NGL database. It allows users to
+          download and visualize data uploaded by researchers and practitioners to the database. Currently, there are
+          406 cyclic direct simple shear (CDSS) specimens and 153 cyclic triaxial specimens (CTX) in NGL, compared
+          with a total of only 83 specimens before the NGL susceptibility project.
+        </p>
+
+        <div class="figure-card histogram-card">
+          <img
+            class="histogram-image"
+            src="assets/histograms.png"
+            alt="Histograms summarizing available lab test data"
+          />
+        </div>
+
+        <div class="video-panel">
+          <video controls playsinline preload="metadata" poster="assets/ngl-video-poster.png">
+            <source src="assets/ngl-lab-viewer-demo.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section class="detail-section" id="python-workflow" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <p class="section-kicker">Workflow Section</p>
+          <h2 id="workflow-title">Example Python Workflow</h2>
+        </div>
+
+        <p class="section-copy">
+          This section demonstrates the potential usage of NGL laboratory data. Because the NGL database is a
+          relational database that allows users to query data with consistent naming, external workflows can be
+          developed using this data. An example workflow is presented below, showcasing the visualization and
+          interpretation of cyclic test results for the NGL susceptibility project.
+        </p>
+
+        <div class="figure-card schematic-card">
+          <img
+            class="schematic-image"
+            src="assets/schematic.png"
+            alt="Schematic showing the example Python workflow"
+          />
+        </div>
+
+        <div class="video-panel">
+          <video controls playsinline preload="metadata" poster="assets/python-video-poster.png">
+            <source src="assets/python-workflow-demo.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-logos" aria-label="Partner logos">
+        <img src="assets/ucla.png" alt="UCLA" />
+        <img src="assets/osu.png" alt="Oregon State University" />
+        <img src="assets/uw.png" alt="University of Washington" />
+        <img src="assets/msu.png" alt="Montana State University" />
+        <img src="assets/swri.png" alt="Southwest Research Institute" />
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
