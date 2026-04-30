@@ -500,3 +500,69 @@ video {
     padding-right: 0.5rem;
   }
 }
+
+@media (min-width: 680px) {
+  main {
+    width: min(100%, 980px);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .brand,
+  .footer-logos {
+    width: min(100%, 980px);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-inner .brand {
+  width: auto;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.personal-link {
+  flex: 0 0 auto;
+  color: var(--ucla-blue);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.personal-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 679px) {
+  .header-inner {
+    padding: 0 0.85rem;
+  }
+
+  .personal-link {
+    font-size: 0.82rem;
+  }
+}
+@media (max-width: 679px) {
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .brand,
+  .header-inner,
+  .footer-logos {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
