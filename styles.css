@@ -36,13 +36,26 @@ a {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(14px);
 }
+
+body {
+  padding-top: 4.25rem;
+}
+
+@media (max-width: 679px) {
+  body {
+    padding-top: 3.75rem;
+  }
+}
+
 
 .brand {
   display: flex;
@@ -327,9 +340,6 @@ h2 {
 }
 
 @media (max-width: 679px) {
-  .site-header {
-    position: sticky;
-  }
 
   .brand {
     min-height: 3.75rem;
